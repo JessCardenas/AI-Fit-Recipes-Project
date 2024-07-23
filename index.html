@@ -4,28 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Fit Recipes Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to a my AI Fit Recipes Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter your favorite ingredient, type of meal, or 3 things that you have on your fridge"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div class="recipe">
-        The recipe will go here <br />
-        <br />Ingredients <br />Steps
-      </div>
-    </main>
+    <div class="container">
+      <header>
+        <h1>AI Fit Recipes Generator</h1>
+        <h2>
+          This site was created to help you achieve your fitness goal, not
+          starve yourself and make the right choices. If you sometimes feel lost
+          and don't know what to eat, feel free to use this AI recipe generator
+          and have a nice meal.
+        </h2>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter your favorite ingredient, type of meal..."
+            autofocus
+            required
+            autocomplete="off"
+            class="ingredients"
+          />
+          <input type="submit" class="submit-button" value="Go!" />
+        </form>
+        <div class="recipe">
+          The recipe will go here <br />
+          <br />Ingredients <br />Steps
+        </div>
+      </main>
+    </div>
+
     <footer>
       This AI project was coded by
       <a href="https://github.com/JessCardenas" target="_blank"
