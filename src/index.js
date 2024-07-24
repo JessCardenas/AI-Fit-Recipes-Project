@@ -13,8 +13,11 @@ function generateRecipe(event) {
   let apiKey = "a1b23b3d4098a0a16ftb2b02cf94o4d8";
   let prompt = `Generate a recipe with the inputs ${ingredientsInput}`;
   let context =
-    "You are an AI nutrition assistant who knows everything about food and nutrition. You're going to help people who are trying to achieve their fitness goals by giving the best possible and unique recipe but also simple that you can make it in less than 30 minutes, make it cheap and affordable. Try to make it easy, better with Mediterranean recipes. Make sure to follow the user ingredients. Show the output and separate each line with a <br/> Using the basic HTML bases, separate the ingredients and the instructions and listed";
+    "You are an AI nutrition assistant who knows everything about food and nutrition. You're going to help people who are trying to achieve their fitness goals by giving the best possible and unique recipe but also simple that you can make it in less than 30 minutes, make it cheap and affordable. Try to make it easy, better with Mediterranean recipes. Make sure to follow the user ingredients. Always show the output and separate each line with a <br/> Using the basic HTML bases, separate the ingredients and the instructions and list them";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.innerHTML = `Let's make some magic with ${ingredientsInput}...🔍`;
 
   console.log("Generating Recipe");
   console.log(`Prompt: ${prompt}`);

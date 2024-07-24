@@ -32,18 +32,23 @@
         </h2>
       </header>
       <main>
-        <form id="ingredients-generator-form">
-          <input
-            type="text"
-            placeholder="Enter your favorite ingredient, type of meal..."
-            autofocus
-            required
-            autocomplete="off"
-            class="ingredients"
-            id="user-ingredients"
-          />
-          <input type="submit" class="submit-button" value="Go!" />
-        </form>
+        <div class="form-container">
+          <form id="ingredients-generator-form">
+            <input
+              type="text"
+              placeholder="Enter your favorite ingredient, type of meal..."
+              autofocus
+              required
+              autocomplete="off"
+              class="ingredients"
+              id="user-ingredients"
+            />
+            <input type="submit" class="submit-button" value="Go!" />
+          </form>
+          <div class="hint">
+            i.e: make an easy dessert with cottage cheese and strawberries...
+          </div>
+        </div>
         <div class="recipe" id="recipe"></div>
       </main>
     </div>
