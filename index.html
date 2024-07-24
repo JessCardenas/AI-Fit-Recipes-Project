@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Fit Recipes Generator</title>
   </head>
   <body>
@@ -30,7 +31,7 @@
         </h2>
       </header>
       <main>
-        <form>
+        <form id="ingredients-generator-form">
           <input
             type="text"
             placeholder="Enter your favorite ingredient, type of meal..."
@@ -41,10 +42,7 @@
           />
           <input type="submit" class="submit-button" value="Go!" />
         </form>
-        <div class="recipe">
-          The recipe will go here <br />
-          <br />Ingredients <br />Steps
-        </div>
+        <div class="recipe" id="recipe"></div>
       </main>
     </div>
 
